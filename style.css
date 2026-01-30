@@ -1,0 +1,13 @@
+#google_image {
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+
+.search_bar {
+  margin: auto;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
