@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Hello!</title>
-        <style>
-            h1 {
-                color:red;
-            }
-        </style>
+        <title>Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+        <img src="https://design.google/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fgd-prod%2Fimages%2Fa910d418-7123-4bc4-aa3b-ef7e25e74ae6.799a99c1196c2fd4.webp&w=3840&q=75" 
+        alt="google image"
+        id="google_image">
     </head>
     <body>
-        <h1>Welcome to my website!</h1>
-        <h2>hello!</h2>
-        Hello, world!
+        <form action="https://www.google.com/search" method="get">
+            <div class="search_bar">
+                <input autocomplete="off" autofocus placeholder="Google Search" type="search" name="q">
+                <input type="submit" value="Google Search">
+            </div>
+        </form>
     </body>
 </html>
