@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RFD search</title>
+    </head>
+    <body>
+        <li>
+        {% for thread in threads %}
+            <li>
+                {% set url = thread.url %}
+                {% set base_url = "https://forums.redflagdeals.com/" %}
+                <ul>{{ thread.title }}: <a href="{{ base_url ~ url }}">{{ thread.title }}</a></ul>
+            </li>
+        {% endfor %}
+        </li>
+    </body>
+</html>
