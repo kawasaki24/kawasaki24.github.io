@@ -24,3 +24,4 @@ def index():
         threads.append(thread_dict)
 
     return render_template("rfd.html", threads=threads)
+
