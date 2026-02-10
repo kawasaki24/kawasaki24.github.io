@@ -1,0 +1,28 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Search Results
+{% endblock %}
+
+{% block body %}
+Search Results: 
+    <p>
+        {% for entry in entries %}
+            {% if form|lower in entry|lower %}
+                <ul>
+                    <li><a href="{% url 'content' title=entry %}">{{ entry }}</a></li>
+                </ul>
+            {% endif %}
+        {% endfor %}
+
+        {% if form|lower not in entries|lower %}
+            <ul>
+                <li>No results found.</li>
+            </ul>
+        {% endif %}
+    </p>
+    <p>
+        End of search.
+    </p>
+
+{% endblock %}
